@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from '../assets/themes/theme';
 
 export default createGlobalStyle`
   * {
@@ -14,11 +15,23 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 16px sans-serif;
+    font: 16px 'Lato' sans-serif;
+    color: ${theme.colors.lightContent};
+  }
+
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
   }
 
   button {
     cursor: pointer;
+    border: none;
+    background: none;
   }
 
   #root {

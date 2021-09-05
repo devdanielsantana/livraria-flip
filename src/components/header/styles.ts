@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import { theme } from '../../assets/themes/theme';
 
 export const Header = styled.header`
   width: 100%;
   position: relative;
+
+  h1 {
+    color: ${theme.colors.darkContent};
+  }
 
   div {
     display: flex;
@@ -20,7 +25,7 @@ export const Header = styled.header`
     display: block;
     width: 90%;
     height: 2px;
-    background: #000;
+    background: ${theme.colors.darkContent};
     margin: 30px auto;
   }
 `;
