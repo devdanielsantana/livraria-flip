@@ -13,7 +13,6 @@ export const Header = styled.header`
   svg {
     position: absolute;
     right: 50px;
-    top: 30px;
   }
 
   &:after {
@@ -22,6 +21,6 @@ export const Header = styled.header`
     width: 90%;
     height: 2px;
     background: #000;
-    margin: 10px auto;
+    margin: 30px auto;
   }
 `;
