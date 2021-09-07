@@ -22,11 +22,11 @@ Utilizei no código o prettier, para padronizar o projeto.
 Então pode ser que ao abrir o projeto de primeira, você se
 depare com o Erro: "Prettier/prettier".
 
-Para resolvelo é bem simples:
+Para resolve-lo é bem simples:
 
 No seu terminal rode o comando `yarn prettier --write .`
 
-### Iniciando o projeto
+## Iniciando o projeto
 
 Para iniciar o projeto em sua maquina, siga os passos abaixo:
 
