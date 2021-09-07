@@ -11,6 +11,7 @@ const Home: React.FC = () => {
           ? books.map((book) => (
               <Book
                 key={book.id}
+                bookId={book.id}
                 name={book.name}
                 description={book.description}
                 img={book.img}

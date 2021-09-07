@@ -15,7 +15,8 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 16px 'Lato' sans-serif;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
     color: ${theme.colors.lightContent};
   }
 
