@@ -41,7 +41,9 @@ const Book: React.FC<IBook> = ({ name, description, value, img, bookId }) => {
         </div>
       </Row>
       <Row>
-        <Button onClick={() => handleBook(item)}>Adicionar ao carrinho</Button>
+        <Button data-cy="buttonTest" onClick={() => handleBook(item)}>
+          Adicionar ao carrinho
+        </Button>
       </Row>
     </Container>
   );

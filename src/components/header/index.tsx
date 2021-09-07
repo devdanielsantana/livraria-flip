@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
         <h1>Livraria Flip</h1>
 
-        <CartContainer>
+        <CartContainer data-cy="ToHaveLength">
           {totalInCart > 0 ? (
             <>
               <Link to="./checkout">
@@ -31,7 +31,6 @@ const Header: React.FC = () => {
             </>
           ) : (
             <>
-              <span>{totalInCart}</span>
               <RiShoppingCartLine size={30} />
             </>
           )}
