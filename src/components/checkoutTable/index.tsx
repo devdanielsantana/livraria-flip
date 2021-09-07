@@ -22,7 +22,7 @@ const CheckoutTable: React.FC = () => {
             booksInCart.map((book) => {
               const totalPerItem = book.qtd * book.value;
               return (
-                <tr key={book.id}>
+                <tr data-cy="tableRowTest" key={book.id}>
                   <td>{book.name}</td>
                   <td>{book.qtd}</td>
                   <td>
@@ -33,7 +33,11 @@ const CheckoutTable: React.FC = () => {
                     })}
                   </td>
                   <td>
-                    <button type="button" onClick={() => removeBook(book.id)}>
+                    <button
+                      data-cy="removeBookTest"
+                      type="button"
+                      onClick={() => removeBook(book.id)}
+                    >
                       <AiOutlineCloseCircle size={28} color="fe0000" />
                     </button>
                   </td>

@@ -14,7 +14,11 @@ const Header: React.FC = () => {
     <StyledHeader>
       <div>
         {location.pathname === '/checkout' && (
-          <button type="button" onClick={() => history.goBack()}>
+          <button
+            data-cy="goBackTest"
+            type="button"
+            onClick={() => history.goBack()}
+          >
             <IoArrowBack size={30} />
           </button>
         )}
