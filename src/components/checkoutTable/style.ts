@@ -15,6 +15,7 @@ export const Table = styled.table`
 export const THeader = styled.thead`
   display: flex;
   justify-content: center;
+  font-weight: bold;
 
   tr {
     display: flex;
@@ -71,6 +72,7 @@ export const TFooter = styled.tfoot`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-weight: bold;
 
   tr {
     display: flex;

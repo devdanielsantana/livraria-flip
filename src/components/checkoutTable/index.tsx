@@ -45,22 +45,21 @@ const CheckoutTable: React.FC = () => {
               <td style={{ width: '100%' }}>Não há produtos</td>
             </tr>
           )}
-
-          <TFooter>
-            <tr>
-              <td>Total</td>
-              <td />
-              <td>
-                {totalValue.toLocaleString('pt-br', {
-                  style: 'currency',
-                  currency: 'BRL',
-                  minimumFractionDigits: 2,
-                })}
-              </td>
-              <td />
-            </tr>
-          </TFooter>
         </TBody>
+        <TFooter>
+          <tr>
+            <td>Total</td>
+            <td />
+            <td>
+              {totalValue.toLocaleString('pt-br', {
+                style: 'currency',
+                currency: 'BRL',
+                minimumFractionDigits: 2,
+              })}
+            </td>
+            <td />
+          </tr>
+        </TFooter>
       </Table>
     </Container>
   );

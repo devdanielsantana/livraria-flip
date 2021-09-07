@@ -6,5 +6,5 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  margin-top: 150px;
+  margin-top: 100px;
 `;

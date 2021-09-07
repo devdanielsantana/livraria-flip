@@ -34,7 +34,7 @@ export const GlobalProvider: React.FC = ({ children }) => {
   const [totalInCart, setTotalInCart] = useState(0);
   const [totalValue, setTotalValue] = useState(0);
   const [booksInCart, setBooksInCart] = useState(() => {
-    const book = localStorage.getItem('book');
+    const book = localStorage.getItem('books');
 
     if (book) {
       const bookJson = JSON.parse(book);
@@ -92,7 +92,9 @@ export const GlobalProvider: React.FC = ({ children }) => {
       0,
     );
     setTotalValue(totalValuePerBook);
-  }, [booksInCart]);
+
+    localStorage.setItem('books', JSON.stringify(booksInCart));
+  }, [booksInCart, setBooksInCart]);
 
   return (
     <GlobalContext.Provider
