@@ -1,46 +1,36 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o projeto da Livraria Flip, desenvolvido como teste para a
+empresa Pagar.me.
 
-## Available Scripts
+Para facilitar a visualização do resultado, talvez você queira acessar o link do Vercel:
 
-In the project directory, you can run:
+[Livraria Flip](https://livraria-flip.vercel.app)
 
-### `yarn start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- EditorConfig
+- Eslint
+- Prettier
+- Typescript
+- ReactJS
+- Cypress
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Ponto de atenção
 
-### `yarn test`
+Utilizei no código o prettier, para padronizar o projeto.
+Então pode ser que ao abrir o projeto de primeira, você se
+depare com o Erro: "Prettier/prettier".
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para resolvelo é bem simples:
 
-### `yarn build`
+No seu terminal rode o comando `yarn prettier --write .`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Iniciando o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para iniciar o projeto em sua maquina, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone o Projeto do github para sua pasta
+1. Abra a sua pasta dentro de um terminal / prompt de comando
+1. Digite o comando `yarn start`
+1. Caso não tenha berto automanticamente em seu computador, abra um navegador de sua preferência e acesse essa página [http://localhost:3000](http://localhost:3000)
