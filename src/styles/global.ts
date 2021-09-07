@@ -38,7 +38,9 @@ export default createGlobalStyle`
   #root {
     max-width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* padding: 40px 20px; */
   }
 
 `;

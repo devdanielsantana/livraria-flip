@@ -36,6 +36,16 @@ export const THeader = styled.thead`
       flex: 2;
       padding: 30px 50px;
     }
+
+    @media (max-width: 768px) {
+      padding: 30px 10px;
+      word-wrap: break-word;
+
+      &:nth-child(odd),
+      &:nth-child(odd) {
+        padding: 30px 25px;
+      }
+    }
   }
 `;
 
@@ -64,6 +74,15 @@ export const TBody = styled.tbody`
     &:nth-child(odd) {
       flex: 2;
       padding: 25px 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 30px 10px;
+
+      &:nth-child(odd),
+      &:nth-child(odd) {
+        padding: 30px 25px;
+      }
     }
   }
 `;
@@ -102,6 +121,15 @@ export const TFooter = styled.tfoot`
     }
     &:nth-child(2) {
       border-left: none;
+    }
+
+    @media (max-width: 768px) {
+      padding: 30px 10px;
+
+      &:nth-child(odd),
+      &:nth-child(odd) {
+        padding: 30px 25px;
+      }
     }
   }
 `;

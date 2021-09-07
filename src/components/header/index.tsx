@@ -3,7 +3,7 @@ import { RiShoppingCartLine } from 'react-icons/ri';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
 import { GlobalContext } from '../../contexts/GlobalContext';
-import * as S from './styles';
+import { StyledHeader, CartContainer } from './styles';
 
 const Header: React.FC = () => {
   const { totalInCart } = useContext(GlobalContext);
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   return (
-    <S.Header>
+    <StyledHeader>
       <div>
         {location.pathname === '/checkout' && (
           <button type="button" onClick={() => history.goBack()}>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
         <h1>Livraria Flip</h1>
 
-        <S.CartContainer>
+        <CartContainer>
           {totalInCart > 0 ? (
             <>
               <Link to="./checkout">
@@ -35,9 +35,9 @@ const Header: React.FC = () => {
               <RiShoppingCartLine size={30} />
             </>
           )}
-        </S.CartContainer>
+        </CartContainer>
       </div>
-    </S.Header>
+    </StyledHeader>
   );
 };
 

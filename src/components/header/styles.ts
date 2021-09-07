@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { theme } from '../../assets/themes/theme';
 
-export const Header = styled.header`
-  width: calc(100% - 40px);
+export const StyledHeader = styled.header`
+  width: 100%;
   padding-bottom: 20px;
   position: fixed;
   top: 0;
@@ -10,7 +10,7 @@ export const Header = styled.header`
   background: ${theme.colors.invertedContent};
   z-index: 10;
 
-  box-shadow: 0 2px ${theme.colors.darkContent};
+  box-shadow: 0 2px 5px -4px ${theme.colors.darkContent};
 
   svg:hover {
     fill: ${theme.colors.secondary};
